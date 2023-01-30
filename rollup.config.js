@@ -23,5 +23,23 @@ export default (env = 'production') => {
       ],
       plugins: [del({ targets: 'lib/*' }), resolve(), typescript(), commonjs()],
     },
+
+    // 导出vite插件
+    {
+      input: './src/vite/index.ts',
+      output: {
+        file: './lib/vite.esm.js',
+        format: 'es',
+      },
+      plugins: [resolve(), typescript(), commonjs()],
+    },
+    {
+      input: './src/vite/index.ts',
+      output: {
+        file: './lib/vite.cjs.js',
+        format: 'cjs',
+      },
+      plugins: [resolve(), typescript(), commonjs()],
+    },
   ];
 };

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue';
-import { getProjectInfo } from 'lastest-project-info';
-console.log(getProjectInfo());
+// import { getProjectInfo } from 'lastest-project-info';
+// console.log(getProjectInfo());
 </script>
 
 <template>
