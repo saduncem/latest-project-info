@@ -1,2 +1,2 @@
-declare const str: string;
-export default str;
+import getProjectInfo from './share/getProjectInfo';
+export { getProjectInfo };

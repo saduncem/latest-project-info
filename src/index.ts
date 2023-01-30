@@ -1,4 +1,3 @@
-const str: string = 'test-log';
-console.log(str);
+import getProjectInfo from './share/getProjectInfo';
 
-export default str;
+export { getProjectInfo };
