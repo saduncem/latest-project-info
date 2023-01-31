@@ -7,6 +7,17 @@
   "scripts": {
     "build": "rollup -c ./rollup.config.js"
   },
+  "files": [
+    "lib",
+    "assets",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lwt09/lastest-project-info"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
