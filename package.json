@@ -1,7 +1,7 @@
 {
   "name": "lastest-project-info",
   "version": "1.0.0",
-  "description": "",
+  "description": "vite插件，打包时候向index.html注入当前项目信息",
   "main": "lib/index.esm.js",
   "type": "module",
   "scripts": {
@@ -34,7 +34,6 @@
       "import": "./lib/webpack.js"
     },
     "./vite": {
-      "types": "./lib/vite/index.d.ts",
       "require": "./lib/vite.cjs.js",
       "import": "./lib/vite.esm.js"
     }
