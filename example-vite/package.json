@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "vue": "^3.2.45",
-    "lastest-project-info": "workspace:*"
+    "latest-project-info": "workspace:*"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

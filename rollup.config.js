@@ -38,8 +38,11 @@ export default (env = 'production') => {
     {
       input: './src/vite/index.ts',
       output: {
-        file: './lib/vite.cjs.js',
+        // todo: 查一下commonjs只能用cjs来使用吗
+        file: './lib/vite.cjs',
         format: 'cjs',
+        // todo: 这个用来干嘛的
+        exports: 'auto',
       },
       plugins: [resolve(), typescript(), commonjs()],
       external: ['child_process'],

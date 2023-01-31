@@ -20,7 +20,7 @@ export default function injectLastestProjectInfoForVitePlugin(
       }, 100);`;
 
       const printInfo = `function printInfo(injectInfo) {
-        console.log('[lastest-project-info] logInfo:');
+        console.log('[latest-project-info] logInfo:');
         console.log(injectInfo);
       };`;
 
