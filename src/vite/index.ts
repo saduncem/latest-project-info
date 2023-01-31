@@ -10,7 +10,11 @@ export default function injectLastestProjectInfoForVitePlugin(
   return {
     name: 'lastestProjectInfoPlugin',
     transformIndexHtml(html) {
-      const injectInfo = JSON.stringify(getProjectInfo());
+      const projectInfo = getProjectInfo()
+      let injectInfo = JSON.stringify(getProjectInfo());
+      if(inputOptions?.extraInfo) {
+        injectInfo = JSON.stringify({...projectInfo, ...inputOptions.extraInfo})
+      }
       const injectHtml = `setTimeout(() => {
         printInfo(projectInfo)
       }, 100);`;

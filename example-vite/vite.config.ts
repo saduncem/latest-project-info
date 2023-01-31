@@ -5,5 +5,14 @@ import injectLastestProjectInfoForVitePlugin from 'lastest-project-info/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(), injectLastestProjectInfoForVitePlugin()],
+  plugins: [vue(), injectLastestProjectInfoForVitePlugin(
+    {
+      extraInfo: [
+        {
+          name: 'Version',
+          value: require('./package.json').version,
+        }
+      ]
+    }
+  )],
 });

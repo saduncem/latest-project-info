@@ -1,5 +1,5 @@
 export interface IOptions {
-  extraInfo?: IExtraInfo;
+  extraInfo?: IExtraInfo[];
 }
 
 export interface IExtraInfo {
