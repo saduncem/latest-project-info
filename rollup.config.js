@@ -22,7 +22,7 @@ export default (env = 'production') => {
         },
       ],
       plugins: [del({ targets: 'lib/*' }), resolve(), typescript(), commonjs()],
-      external: ['child_process'],
+      external: ['git-repo-info', 'child_process'],
     },
 
     // 导出vite插件
@@ -33,7 +33,7 @@ export default (env = 'production') => {
         format: 'es',
       },
       plugins: [resolve(), typescript(), commonjs()],
-      external: ['child_process'],
+      external: ['git-repo-info', 'child_process'],
     },
     {
       input: './src/vite/index.ts',
@@ -45,7 +45,7 @@ export default (env = 'production') => {
         exports: 'auto',
       },
       plugins: [resolve(), typescript(), commonjs()],
-      external: ['child_process'],
+      external: ['git-repo-info', 'child_process'],
     },
   ];
 };

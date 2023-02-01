@@ -1,6 +1,6 @@
 {
   "name": "latest-project-info",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "vite插件，打包时候向index.html注入当前项目信息",
   "main": "lib/index.esm.js",
   "type": "module",
@@ -21,16 +21,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
-    "git-repo-info": "^2.1.1",
     "rollup": "^3.12.0",
     "rollup-plugin-delete": "^2.0.0",
     "tslib": "^2.5.0",
     "typescript": "^4.9.4",
     "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "git-repo-info": "^2.1.1"
   },
   "exports": {
     ".": {
